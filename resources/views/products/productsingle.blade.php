@@ -54,7 +54,7 @@
                     <input type="hidden" name="image" value="{{ $product->image }}">
                     @if (isset(Auth::user()->id))
                     @if($checkingInCart == 0)
-                        <button type="submit" name="submit" class="btn btn-primary py-3 px-5">Add to Cart</button>
+                        <button type="submit" name="submit" class="btn btn-primary btn-outline-black py-3 px-5">Add to Cart</button>
                     @else
                         <button style="background-color: black" class="text-white btn btn-warning py-3 px-5" disabled>Added to Cart</button>
                     @endif
